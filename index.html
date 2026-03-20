@@ -1,72 +1,47 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-white">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hidgam Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Jakarta+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=Jakarta+Sans:wght@400;600&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+  <title>Hidgam</title>
+  <style>
+    body { font-family: 'Arial', sans-serif; }
+    .hero { background-image: url('path/to/chemistry_lab_background.jpg'); background-size: cover; }
+  </style>
 </head>
-<body class="font-sans bg-white">
-    <!-- Hero Section -->
-    <header class="relative bg-cover bg-center h-screen" style="background-image: url('path/to/your/chemlab-background.jpg');">
-        <div class="absolute inset-0 bg-black opacity-50"></div>
-        <div class="relative container mx-auto px-4 pt-20 text-center text-white">
-            <h1 class="text-5xl font-bold">Welcome to Hidgam</h1>
-            <p class="mt-4 text-lg">Your go-to platform for chemistry insights and interactive learning.</p>
-        </div>
-    </header>
-    
-    <!-- Bento Grid -->
-    <section class="my-10">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <h2 class="font-bold text-xl">Visualisasi Molekul</h2>
-                    <p>Explore molecular structures with interactive visuals.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <h2 class="font-bold text-xl">Prediksi pH</h2>
-                    <p>Predict pH levels based on chemical compositions.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <h2 class="font-bold text-xl">Case Study</h2>
-                    <p>Learn through various case studies in chemistry.</p>
-                </div>
-                <div class="bg-white rounded-lg shadow-lg p-6 text-center">
-                    <h2 class="font-bold text-xl">Kuis Adaptif</h2>
-                    <p>Test your knowledge with adaptive quizzes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Development Info -->
-    <section class="my-10 bg-gray-200 p-6 rounded-lg">
-        <div class="container mx-auto text-center">
-            <h2 class="font-bold text-xl">Development Team</h2>
-            <p>Created by Ahmad Firdaus from SMAN 1 PASIRIAN</p>
-        </div>
-    </section>
-    
-    <!-- Interactive Steps -->
-    <section class="my-10">
-        <div class="container mx-auto px-4">
-            <h2 class="text-center font-bold text-2xl">Three Interactive Steps</h2>
-            <ol class="list-decimal list-inside max-w-xl mx-auto my-4">
-                <li class="my-2">Step 1: Understand the basics of Chemistry.</li>
-                <li class="my-2">Step 2: Engage with interactive tools and resources.</li>
-                <li class="my-2">Step 3: Assess your knowledge with quizzes.</li>
-            </ol>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white p-4 text-center">
-        <p>&copy; 2026 Hidgam. All rights reserved.</p>
-    </footer>
+<body>
+  <nav class="bg-blue-500 p-4">
+    <h1 class="text-white text-lg">Hidgam</h1>
+    <ul class="flex space-x-4">
+      <li><a href="#features" class="text-white">Features</a></li>
+      <li><a href="#info" class="text-white">Development Info</a></li>
+      <li><a href="#steps" class="text-white">Interactive Steps</a></li>
+      <li><a href="#footer" class="text-white">Footer</a></li>
+    </ul>
+  </nav>
+  <section class="hero h-64 flex items-center justify-center">
+    <h2 class="text-4xl text-white">Welcome to Hidgam!</h2>
+  </section>
+  <section id="features" class="grid grid-cols-2 md:grid-cols-4 gap-4 p-4">
+    <div class="border p-4"><h3>Visualisasi Molekul</h3></div>
+    <div class="border p-4"><h3>Prediksi pH</h3></div>
+    <div class="border p-4"><h3>Case Study</h3></div>
+    <div class="border p-4"><h3>Kuis Adaptif</h3></div>
+  </section>
+  <section id="info" class="p-4">
+    <h2>Development Info</h2>
+    <img src="path/to/ahmad_firdaus_image.jpg" alt="Ahmad Firdaus" />
+    <p>Developer: Ahmad Firdaus</p>
+  </section>
+  <section id="steps" class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+    <div class="border p-4">Step 1</div>
+    <div class="border p-4">Step 2</div>
+    <div class="border p-4">Step 3</div>
+  </section>
+  <footer id="footer" class="bg-gray-200 p-4">
+    <p>&copy; 2026 Hidgam</p>
+  </footer>
 </body>
 </html>
